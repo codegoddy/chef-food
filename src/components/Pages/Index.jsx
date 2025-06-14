@@ -91,6 +91,26 @@ const Index = () => {
                     )}
                 </div>
             </div>
+
+            {/*SlideShow*/}
+            <div className="sideshow">
+                <div
+                    className="carousel"
+                    onMouseEnter={stopAutoRotate}
+                    onMouseLeave={startAutoRotate}
+                    style={{transform: `rotate(${activeIndex * 90}deg)`}}
+                >
+                    {slides.map((img, index) => (
+                        <div
+                            className={`Slide ${activeIndex === index ? 'active' : ''}`}
+                            key={index}
+                        >
+                            <img src={img} alt={`Slide ${index + 1}`}/>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
         </div>
     );
 };
