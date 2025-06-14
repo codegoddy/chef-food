@@ -109,6 +109,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .social-icons {
@@ -271,15 +272,20 @@ body {
 }
 
 .sideshow {
+    position: absolute;
     flex: 1;
     display: flex;
-    min-width: 300px;
+    min-width: 200px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    top:20px;
+    right: 20px;
+    z-index: 10;
+
 }
 
-.carousel {
+.sideshow .carousel {
     width: 40rem;
     height: 40rem;
     border: 5rem solid var(--primary-color);

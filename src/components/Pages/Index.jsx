@@ -8,9 +8,9 @@ const Index = () => {
 
     const controls = [
         {thumb: food1, label: 'Roll'},
-        {thumb: food2, label: 'Pasta'},
-        {thumb: food3, label: 'Spicy Roll'},
         {thumb: food4, label: 'Sandwich'},
+        {thumb: food3, label: 'Spicy Roll'},
+        {thumb: food2, label: 'Pasta'},
     ];
 
     const slides = [food1, food2, food3, food4];
