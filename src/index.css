@@ -129,3 +129,10 @@ body {
     color: var(--primary-color);
     transform: scale(1.2);
 }
+
+.hero-content{
+    flex: 1;
+    width: 500px;
+    padding-left: 12%;
+    
+}
