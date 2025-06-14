@@ -77,16 +77,16 @@ const Index = () => {
                 {/*Food Controls*/}
                 <div className="controls">
                     {controls.map((item, index) => (
-                        <div
-                            key={index}
-                            className={`control ${activeIndex === index ? 'active' : ''}`}
-                            data-index={index +1}
-                            onClick={() => handleClick(index)}
-                        >
-                            <img src={item.thumb} alt={item.label}/>
-                            <h3>{item.label}</h3>
-                            <p>Details About{item.label}</p>
-                       </div>
+                            <div
+                                key={index}
+                                className={`control ${activeIndex === index ? 'active' : ''}`}
+                                data-index={index + 1}
+                                onClick={() => handleClick(index)}
+                            >
+                                <img src={item.thumb} alt={item.label}/>
+                                <h3>{item.label}</h3>
+                                <p>Details About{item.label}</p>
+                            </div>
                         )
                     )}
                 </div>

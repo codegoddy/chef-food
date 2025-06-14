@@ -294,7 +294,7 @@ body {
     transition: transform 1s ease;
 }
 
-.Slide{
+.Slide {
     width: 14rem;
     position: absolute;
 }
@@ -304,24 +304,29 @@ body {
     object-fit: cover;
     transition: transform 0.5s;
 }
+
 .Slide.active img {
     transform: scale(2.5);
     transition: transform 0.5s 0.5s;
 }
+
 .Slide:nth-child(1) {
     bottom: -10rem;
     left: -10rem;
 }
+
 .Slide:nth-child(2) {
     top: -10rem;
     left: -10rem;
     transform: rotate(90deg);
 }
+
 .Slide:nth-child(3) {
     top: -10rem;
     right: -10rem;
     transform: rotate(180deg);
 }
+
 .Slide:nth-child(4) {
     bottom: -10rem;
     right: -10rem;
